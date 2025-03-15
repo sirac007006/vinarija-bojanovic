@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  height: 150vh; /* Dovoljno prostora za testiranje skrolovanja */
+  width: 100%;
+  background: #f4f4f4;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+
+nav.solid {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-width: 5vw; /* Maksimalna širina za veće ekrane */
+  max-height: 80px; /* Ograničavamo visinu loga na navigacioni bar */
+  position: absolute;
+  top: 50%; /* Centriranje po vertikali */
+  left: 1vh;
+  transform: translateY(-50%); /* Centriranje po vertikali pomoću transform */
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.rez-btng {
+  background-color: #942222;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btngs {
+  background-color: #942222;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btn:hover {
+  background-color: #333;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav.solid ul li a {
+  color: black;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 100px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+nav.solid ul li a.active,
+nav.solid ul li a:hover {
+  background: #9e4c4c;
+  transition: .5s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #9e4c4c;
+  transition: .5s;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: #060D0D;
+  padding-top: 20vh;
+  
+}
+.text{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.services-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #883030;
+  margin: 20px auto;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.method {
+    background-color: #883030;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #883030;
+    max-width: 300px;
+}
+
+.method h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.method p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.footer{
+  background:#883030;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:#A8C4D6;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:#A8C4D6;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color: #fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+
+  .ftrlink.active,
+  .ftrlink:hover {
+    transition: .5s;
+    color: #fff;
+  }
+  .wine-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+h1{
+    padding-top: 100px;
+    text-align: center;
+}
+.wine-item, .wine-item-reverse {
+    display: flex;
+    align-items: center; /* Centriranje teksta vertikalno */
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.wine-item-reverse {
+    flex-direction: row-reverse; /* Obrnuti raspored */
+}
+.wine-item-reverse img{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wine-text {
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Centriranje teksta vertikalno */
+}
+
+.wine-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wine-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.wine-text a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #a00;
+    font-weight: bold;
+}
+
+.wine-image {
+    flex: 1;
+    text-align: right;
+}
+
+.wine-image img {
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.services-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #883030;
+  margin: 20px auto;
+}
+
+  
+
+/* Stilovi za ekrane šire od 1500px */
+@media (max-width: 1500px) {
+  section {
+    height: 100vh; /* Dovoljno prostora za testiranje skrolovanja */
+    background: #f4f4f4;
+  }
+  .divbgslika {
+    background-image: url('pocetnasl.jpg');
+    background-size: contain;
+    height: 167vh;
+  }
+  .logo {
+    max-width: 120px;
+    max-height: 120px;
+    top: 50%;
+    left: 2vh;
+  }
+  .custom-grid .left-image {
+    width: 100%; /* Širina slike */
+    height: 70%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve kolone */
+    grid-template-rows: auto auto 140vh; /* Tri reda */
+    gap: 20px; /* Razmak između elemenata */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* Centriranje grida i dodatni razmak od donjeg dela stranice */
+    background-color: #fff;
+    padding-bottom: 900px;
+    padding-top: 50px;
+    margin-top: 200px;
+  }
+}
+
+/* Stilovi za ekrane šire od 1200px */
+@media (max-width: 1200px) {
+  .logo {
+    max-width: 80px;
+    max-height: 80px;
+    top: 50%;
+    left: 1vh;
+  }
+  nav {
+    height: 70px;
+  }
+  .divbgslika {
+    background-size: cover;
+  }
+  .sadrzajpocetna {
+    width: 80%;
+  }
+}
+
+/* Stilovi za ekrane šire od 1050px */
+@media (max-width: 1050px) {
+  .logo {
+    max-width: 70px;
+    max-height: 70px;
+    top: 50%;
+    left: 1vh;
+  }
+}
+
+/* Stilovi za ekrane šire od 900px */
+@media (max-width: 900px) {
+  nav {
+    height: 60px;
+    background-color: #fff;
+  }
+  .logo {
+    max-width: 60px;
+    max-height: 60px;
+    top: 50%;
+    left: 1vh;
+  }
+  .checkbtn {
+    display: block;
+    font-size: 26px;
+    line-height: 60px;
+    color: #942222;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out; /* Dodata bolja tranzicija */
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s ease; /* Dodata tranzicija za hover efekat */
+  }
+  nav ul li a:hover {
+    color: #133B5C; /* Hover efekat za bolju čitljivost */
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  .footer .row a i {
+    font-size: 1.5em;
+  }
+  .ftrul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .ftrul a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wine-item, .wine-item-reverse {
+    flex-direction: column; /* Stavlja slike iznad teksta */
+    align-items: center;
+    text-align: center;
+}
+
+.wine-image {
+    text-align: center; /* Centriranje slike */
+}
+
+.wine-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriranje teksta */
+    justify-content: center;
+}
+
+.wine-image img {
+    max-width: 250px; /* Smanjuje slike za bolji prikaz na telefonima */
+}
+}
+
+
+/* Stilovi za ekrane šire od 700px */
+@media (max-width: 700px) {
+  .logo {
+    max-width: 60px;
+    max-height: 60px;
+    top: 50%;
+    left: 1vh;
+    transform: translateY(-50%);
+  }
+}
+
+/* Stilovi za ekrane šire od 500px */
+@media (max-width: 500px) {
+  .logo {
+    max-width: 50px;
+    max-height: 50px;
+    top: 50%;
+    left: 1vh;
+    transform: translateY(-50%);
+  }
+}
+
+/* Stilovi za ekrane šire od 376px */
+/* Popravljanje za mobilne uređaje */
+@media (max-width: 375px) {
+  .why-choose-us-container {
+    flex-direction: column; /* Postavlja sliku i tekst u kolonu */
+    padding: 10px; /* Dodaje prostor oko elemenata */
+  }
+
+  .why-image {
+    width: 100%; /* Slika zauzima punu širinu */
+    height: auto; /* Održava proporcije */
+    margin-bottom: 10px; /* Razmak ispod slike */
+    padding-top: 150px;
+  }
+
+  .why-text {
+    font-size: 14px; /* Smanjuje font teksta za mobilne uređaje */
+    line-height: 1.5; /* Poboljšava čitljivost */
+    text-align: justify; /* Poravnava tekst za lepši prikaz */
+    margin-top: 10px; /* Dodaje razmak od slike */
+  }
+
+  h2 {
+    font-size: 20px; /* Naslov je manji */
+    text-align: center; /* Poravnava naslov na sredinu */
+    margin-bottom: 15px; /* Dodaje razmak ispod naslova */
+  }
+
+  .rez-btns {
+    display: inline-block; /* Dugme ostaje u redu */
+    font-size: 16px; /* Smanjuje veličinu dugmeta */
+    padding: 8px 16px; /* Bolje pozicioniranje */
+    margin-top: 10px; /* Razmak ispod teksta */
+    text-align: center; /* Poravnava dugme */
+  }
+}
+
+
+/* Stilovi za ekrane šire od 345px */
+@media (max-width: 345px) {
+  .logo {
+    max-width: 35px;
+    max-height: 35px;
+    top: 50%;
+    left: 1vh;
+    transform: translateY(-50%);
+  }
+}

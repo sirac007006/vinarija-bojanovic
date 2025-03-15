@@ -12,8 +12,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-section {
-  height: 130vh; /* Dovoljno prostora za testiranje skrolovanja */
+.section {
+  height: 140vh; /* Dovoljno prostora za testiranje skrolovanja */
   width: 100%;
   background: #f4f4f4;
 }
@@ -43,6 +43,27 @@ nav.solid {
 .logo img {
   width: 100%;
   height: auto;
+}
+.rez-btng {
+  background-color: #942222;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btngs {
+  background-color: #942222;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.rez-btn:hover {
+  background-color: #333;
 }
 
 nav ul {
@@ -85,25 +106,25 @@ nav.solid ul li a {
 
 nav.solid ul li a.active,
 nav.solid ul li a:hover {
-  background: #D6EFFF;
+  background: #9e4c4c;
   transition: .5s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #A8C4D6;
+  background: #883030;
   transition: .5s;
 }
 
 .divbgslika {
   width: 100%;
-  height: 130vh;
-  background-image: url('zastoiz.jpg');
+  height: 140vh;
+  background-image: url('onama2.jpg');
   background-size: contain; /* Menja na contain da bi se prikazala cela slika */
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: center;
   flex-wrap: wrap;
   padding-right: 5vw;
@@ -157,10 +178,9 @@ h3 {
 }
 
 .column p {
-  color: #555;
-}
+  color: #555;}
 .footer{
-  background:#133B5C;
+  background:#883030;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
@@ -208,35 +228,38 @@ h3 {
 
 /* Stilovi za ekrane šire od 1500px */
 @media (max-width: 1500px) {
-  section {
-    height: 147vh; /* Dovoljno prostora za testiranje skrolovanja */
+  .section {
+    height: 100vh; /* Dovoljno prostora za testiranje skrolovanja */
     background: #f4f4f4;
   }
   .divbgslika {
-    background-image: url('zastoiz.jpg');
+    background-image: url('onama2.jpg');
     background-size: contain;
-    height: 147vh;
+    height: 148.5vh;
   }
   .logo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 120px;
+    max-height: 120px;
     top: 50%;
-    left: 1vh;
+    left: 2vh;
   }
   .custom-grid .left-image {
     width: 100%; /* Širina slike */
     height: 70%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
-
-/* Stilovi za ekrane šire od 1400px */
-@media (max-width: 1400px) {
-  .logo {
-    max-width: 80px;
-    max-height: 80px;
-    top: 50%;
-    left: 1vh;
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve kolone */
+    grid-template-rows: auto auto 140vh; /* Tri reda */
+    gap: 20px; /* Razmak između elemenata */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* Centriranje grida i dodatni razmak od donjeg dela stranice */
+    background-color: #fff;
+    padding-bottom: 900px;
+    padding-top: 50px;
+    margin-top: 200px;
   }
 }
 
@@ -285,7 +308,7 @@ h3 {
     display: block;
     font-size: 26px;
     line-height: 60px;
-    color: #133B5C;
+    color: #942222;
   }
   nav ul {
     position: fixed;
@@ -308,9 +331,6 @@ h3 {
     color: black;
     transition: color 0.3s ease; /* Dodata tranzicija za hover efekat */
   }
-  nav ul li a:hover {
-    color: #133B5C; /* Hover efekat za bolju čitljivost */
-  }
   #check:checked ~ ul {
     left: 0;
   }
@@ -320,9 +340,6 @@ h3 {
     padding-right: 2vw;
     justify-content: center;
     text-align: center;
-  }
-  section{
-    height: 100vh;
   }
   .sadrzajpocetna {
     width: 90%;
@@ -373,7 +390,6 @@ h3 {
     padding-left: 5px;
     padding-right: 5px;
   }
-
 }
 
 
@@ -402,12 +418,37 @@ h3 {
 /* Stilovi za ekrane šire od 376px */
 /* Popravljanje za mobilne uređaje */
 @media (max-width: 375px) {
+  .why-choose-us-container {
+    flex-direction: column; /* Postavlja sliku i tekst u kolonu */
+    padding: 10px; /* Dodaje prostor oko elemenata */
+  }
 
+  .why-image {
+    width: 100%; /* Slika zauzima punu širinu */
+    height: auto; /* Održava proporcije */
+    margin-bottom: 10px; /* Razmak ispod slike */
+    padding-top: 150px;
+  }
+
+  .why-text {
+    font-size: 14px; /* Smanjuje font teksta za mobilne uređaje */
+    line-height: 1.5; /* Poboljšava čitljivost */
+    text-align: justify; /* Poravnava tekst za lepši prikaz */
+    margin-top: 10px; /* Dodaje razmak od slike */
+  }
 
   h2 {
     font-size: 20px; /* Naslov je manji */
     text-align: center; /* Poravnava naslov na sredinu */
     margin-bottom: 15px; /* Dodaje razmak ispod naslova */
+  }
+
+  .rez-btns {
+    display: inline-block; /* Dugme ostaje u redu */
+    font-size: 16px; /* Smanjuje veličinu dugmeta */
+    padding: 8px 16px; /* Bolje pozicioniranje */
+    margin-top: 10px; /* Razmak ispod teksta */
+    text-align: center; /* Poravnava dugme */
   }
 }
 

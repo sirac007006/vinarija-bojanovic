@@ -24,7 +24,6 @@ nav {
   position: fixed;
   z-index: 10;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
 }
 
 
@@ -46,7 +45,7 @@ nav.solid {
   height: auto;
 }
 .rez-btng {
-  background-color: #f1c40f;
+  background-color: #942222;
   font-weight: bold;
   color: #fff;
   padding: 10px 20px;
@@ -55,7 +54,7 @@ nav.solid {
   transition: background-color 0.3s ease;
 }
 .rez-btngs {
-  background-color: #133B5C;
+  background-color: #942222;
   font-weight: bold;
   color: #fff;
   padding: 10px 20px;
@@ -79,15 +78,14 @@ nav ul li {
 }
 
 nav ul li a {
+  color: black;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
-nav ul li a {
-  color: black;
-}
+
 nav.solid ul li a {
   color: black;
 }
@@ -108,13 +106,13 @@ nav.solid ul li a {
 
 nav.solid ul li a.active,
 nav.solid ul li a:hover {
-  background: #D6EFFF;
+  background: #9e4c4c;
   transition: .5s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #A8C4D6;
+  background: #883030;
   transition: .5s;
 }
 
@@ -138,7 +136,7 @@ nav ul li a:hover {
 .services-divider {
   width: 100px;
   height: 3px;
-  background-color: #A8C4D6;
+  background-color: #883030;
   margin: 20px auto;
 }
 
@@ -158,17 +156,17 @@ nav ul li a:hover {
 }
 
 .method {
-    background-color: #133B5C;
+    background-color: #883030;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #133b5c;
+    box-shadow: 0 4px 8px #883030;
     max-width: 300px;
 }
 
 .method h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #fff;
+    color: white;
 }
 
 .method p {
@@ -177,7 +175,7 @@ nav ul li a:hover {
 }
 
 .footer{
-  background:#133B5C;
+  background:#883030;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
@@ -226,34 +224,37 @@ nav ul li a:hover {
 /* Stilovi za ekrane šire od 1500px */
 @media (max-width: 1500px) {
   section {
-    height: 105vh; /* Dovoljno prostora za testiranje skrolovanja */
+    height: 100vh; /* Dovoljno prostora za testiranje skrolovanja */
     background: #f4f4f4;
   }
   .divbgslika {
     background-image: url('pocetnasl.jpg');
     background-size: contain;
-    height: 125vh;
+    height: 167vh;
   }
   .logo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 120px;
+    max-height: 120px;
     top: 50%;
-    left: 1vh;
+    left: 2vh;
   }
   .custom-grid .left-image {
     width: 100%; /* Širina slike */
     height: 70%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
-
-/* Stilovi za ekrane šire od 1400px */
-@media (max-width: 1400px) {
-  .logo {
-    max-width: 80px;
-    max-height: 80px;
-    top: 50%;
-    left: 1vh;
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve kolone */
+    grid-template-rows: auto auto 140vh; /* Tri reda */
+    gap: 20px; /* Razmak između elemenata */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* Centriranje grida i dodatni razmak od donjeg dela stranice */
+    background-color: #fff;
+    padding-bottom: 900px;
+    padding-top: 50px;
+    margin-top: 200px;
   }
 }
 
@@ -302,7 +303,7 @@ nav ul li a:hover {
     display: block;
     font-size: 26px;
     line-height: 60px;
-    color: #133B5C;
+    color: #942222;
   }
   nav ul {
     position: fixed;

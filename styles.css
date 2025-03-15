@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  height: 150vh; /* Dovoljno prostora za testiranje skrolovanja */
+  height: 130vh; /* Dovoljno prostora za testiranje skrolovanja */
   width: 100%;
   background: #f4f4f4;
 }
@@ -45,7 +45,7 @@ nav.solid {
   height: auto;
 }
 .rez-btng {
-  background-color: #f1c40f;
+  background-color: #942222;
   font-weight: bold;
   color: #fff;
   padding: 10px 20px;
@@ -54,7 +54,7 @@ nav.solid {
   transition: background-color 0.3s ease;
 }
 .rez-btngs {
-  background-color: #133B5C;
+  background-color: #942222;
   font-weight: bold;
   color: #fff;
   padding: 10px 20px;
@@ -106,20 +106,20 @@ nav.solid ul li a {
 
 nav.solid ul li a.active,
 nav.solid ul li a:hover {
-  background: #D6EFFF;
+  background: #9e4c4c;
   transition: .5s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #A8C4D6;
+  background: #883030;
   transition: .5s;
 }
 
 .divbgslika {
   width: 100%;
-  height: 150vh;
-  background-image: url('pocetnaslvelika.jpg');
+  height: 128%;
+  background-image: url('pocetnasl.jpg');
   background-size: contain; /* Menja na contain da bi se prikazala cela slika */
   background-position: center;
   background-repeat: no-repeat;
@@ -146,13 +146,13 @@ nav ul li a:hover {
 .custom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dve kolone */
-  grid-template-rows: auto auto 140vh; /* Tri reda */
+  grid-template-rows: auto auto 170vh; /* Tri reda */
   gap: 20px; /* Razmak između elemenata */
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto 40px auto; /* Centriranje grida i dodatni razmak od donjeg dela stranice */
   background-color: #fff;
-  padding-bottom: 900px;
+  padding-bottom: 800px;
   padding-top: 50px;
 }
 
@@ -160,7 +160,7 @@ nav ul li a:hover {
   grid-column: 1;
   grid-row: 1;
   font-size: 2.5rem;
-  color: #004aad;
+  color: #883030;
   margin: 0 0 15px 0;
 }
 
@@ -199,7 +199,7 @@ nav ul li a:hover {
 .custom-grid .explore-button {
   position: relative;
   bottom: 42px; /* Razmak od donjeg dela slike */
-  left: 480px; /* Razmak od desnog dela slike */
+  left: 0; /* Razmak od desnog dela slike */
   padding: 10px 20px;
   font-size: 1rem;
   color: #060D0D; /* Tekst tamne boje */
@@ -227,7 +227,7 @@ nav ul li a:hover {
 }
 .mapa h1{
   font-size: 2.5rem;
-  color: #133B5C;
+  color: #2a2b2b;
   margin: 0 0 15px 0;
 }
 iframe{
@@ -348,7 +348,7 @@ iframe{
 }
 
 .footer{
-  background:#133B5C;
+  background:#883030;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
@@ -397,34 +397,37 @@ iframe{
 /* Stilovi za ekrane šire od 1500px */
 @media (max-width: 1500px) {
   section {
-    height: 105vh; /* Dovoljno prostora za testiranje skrolovanja */
+    height: 100vh; /* Dovoljno prostora za testiranje skrolovanja */
     background: #f4f4f4;
   }
   .divbgslika {
     background-image: url('pocetnasl.jpg');
     background-size: contain;
-    height: 125vh;
+    height: 167vh;
   }
   .logo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 120px;
+    max-height: 120px;
     top: 50%;
-    left: 1vh;
+    left: 2vh;
   }
   .custom-grid .left-image {
     width: 100%; /* Širina slike */
     height: 70%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
-
-/* Stilovi za ekrane šire od 1400px */
-@media (max-width: 1400px) {
-  .logo {
-    max-width: 80px;
-    max-height: 80px;
-    top: 50%;
-    left: 1vh;
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve kolone */
+    grid-template-rows: auto auto 140vh; /* Tri reda */
+    gap: 20px; /* Razmak između elemenata */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* Centriranje grida i dodatni razmak od donjeg dela stranice */
+    background-color: #fff;
+    padding-bottom: 900px;
+    padding-top: 50px;
+    margin-top: 200px;
   }
 }
 
@@ -473,7 +476,7 @@ iframe{
     display: block;
     font-size: 26px;
     line-height: 60px;
-    color: #133B5C;
+    color: #942222;
   }
   nav ul {
     position: fixed;
@@ -495,9 +498,6 @@ iframe{
     font-size: 20px;
     color: black;
     transition: color 0.3s ease; /* Dodata tranzicija za hover efekat */
-  }
-  nav ul li a:hover {
-    color: #133B5C; /* Hover efekat za bolju čitljivost */
   }
   #check:checked ~ ul {
     left: 0;
@@ -523,6 +523,7 @@ iframe{
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    margin-top: 20px;
   }
   .custom-grid .left-text,
   .custom-grid .right-text {
