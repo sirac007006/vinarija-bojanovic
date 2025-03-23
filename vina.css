@@ -104,7 +104,11 @@ nav.solid ul li a {
 #check {
   display: none;
 }
-
+.zastava {
+  position: relative;
+  top: 8px;
+  width: 30px;
+}
 nav.solid ul li a.active,
 nav.solid ul li a:hover {
   background: #9e4c4c;
