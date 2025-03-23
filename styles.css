@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  height: 130vh; /* Dovoljno prostora za testiranje skrolovanja */
+  height: 140vh; /* Dovoljno prostora za testiranje skrolovanja */
   width: 100%;
   background: #f4f4f4;
 }
@@ -118,7 +118,7 @@ nav ul li a:hover {
 
 .divbgslika {
   width: 100%;
-  height: 128%;
+  height: 155.5vh;
   background-image: url('pocetnasl.jpg');
   background-size: contain; /* Menja na contain da bi se prikazala cela slika */
   background-position: center;
@@ -129,6 +129,11 @@ nav ul li a:hover {
   flex-wrap: wrap;
   padding-right: 5vw;
   padding-top: 0;
+}
+.zastava {
+  position: relative;
+  top: 8px;
+  width: 30px;
 }
 .sadrzajpocetna{
   width: 50vw;

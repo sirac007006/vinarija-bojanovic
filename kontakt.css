@@ -65,7 +65,11 @@ nav.solid {
 .rez-btn:hover {
   background-color: #333;
 }
-
+.zastava {
+  position: relative;
+  top: 8px;
+  width: 30px;
+}
 nav ul {
   float: right;
   margin-right: 20px;

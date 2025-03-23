@@ -89,7 +89,11 @@ nav ul li a {
 nav.solid ul li a {
   color: black;
 }
-
+.zastava {
+  position: relative;
+  top: 8px;
+  width: 30px;
+}
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -315,6 +319,11 @@ nav ul li a:hover {
   nav ul li {
     display: block;
     margin: 12px 0;
+  }
+  .zastava {
+    position: relative;
+    top: 8px;
+    width: 30px;
   }
   nav ul li a {
     font-size: 20px;
